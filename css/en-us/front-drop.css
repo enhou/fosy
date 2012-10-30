@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/***********************************/
+/** v1.00 date: June28, 2012 **/
+/***********************************/
+
+/* *****************reset********************* */
+
+* { margin: 0;padding: 0;}
+h1, h2, h3, h4, h5, h6, small { font-size: 100%;margin: 0; padding: 0; }
+li { list-style: none; list-style-position: outside; }
+a { text-decoration: none; /* color: inherit;  */}
+a:hover, a:focus { /* text-decoration: underline;  */}
+img, abbr, fieldset { border: none; }
+img { vertical-align: top; }
+/*strong, cite, address { font-style: normal; font-weight: normal; }*/
+legend { display: none; }
+input, button, textarea { font-family: Arial, sans-serif; }
+input[type=text], textarea {/* -webkit-appearance:none;-webkit-border-radius:0; *//*outline:none; border:none;*/ border: none; }
+table { table-layout: fixed; border-collapse: collapse; }
+:focus { /*outline: 0;*/ }
+object { outline: none; }
+.clear, .cf { clear: both; }
+.cf:after, .clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* *****************font********************* */
+.topImgNei, .footWrap, .mainContainer { font: 62.5%/1.25 Arial, Helvetica, sans-serif; color: #333333; }
+.georgia { font-family: Georgia, "Times New Roman", Times, serif; }
+.timesNR { font-family: "Times New Roman", Georgia, Times, serif; }
+.arial { font-family: Arial, Helvetica, sans-serif; }
+.Helv { font-family: Helvetica, Arial, sans-serif; }
+.daxie { text-transform: uppercase; }
+.cABlack { color: black; }
+.cDGray { color: rgb(99,99,99) }
+.cDGray a:hover, a:hover .cFGray { color: black; text-decoration: none; }
+.cEGray { color: #4e4e4e }
+.cFGray { color: #4b4b4b }
+.cMGray { color: #666666; }
+.cABlue { color: #2a4296; }
+.color36c { color: rgb(44,78,170); }
+.cCBlue { color: #0063ea; }
+.cDBlue { color: #003399 }
+.cAWhite { color: #FFF; }
+
+/********Ticket Finder Version**************/
+
+#top-logo-link { float: left; height: 59px; width: 1000px; background: #999933 url(/image/front/2013/top-logo-link-bg-find-ticket2013.jpg) no-repeat top left; }
+#top-logo-left { float: left; height: 59px; width: 300px; }
+#top-logo-center { float: left; height: 59px; width: 530px; }
+#top-logo-right { float: left; height: 59px; width: 170px; margin-top: 4px; }
+#menu-ticket-finder { position: absolute; margin: -14px 0 0 20px; vertical-align: top; top: 0; left: 0; }
+#image_ticket-map_finder { margin-left: 15px; }
+
+#menu-select-city { float: left; position: absolute; top: 0; left: 0; }
+#menu-select-city-dropdown { background: rgba(82,41,122,0.95); 
+*background: #52297a;background: #52297a\9;
+filter:alpha(opacity=95); 
+margin:0; top: 32px; left: 10px; width: 985px; height: 442px; float: left; display: inline; position: absolute; z-index: 100; }
+#menu-select-city-dropdown .content { padding: 23px 38px 0 22px; text-align: left; height: 100%; overflow: hidden;  }
+#scrollable-city-list { width:690px; float: left;}
+#scrollable-city-list .viewport {width:595px; height: 347px; overflow: hidden; position: relative; margin: 0 81px 0 0;   }
+#scrollable-city-list .grid3col-wrapper{padding: 12px 0 0;position: relative;margin: 0 0 0 41px; width: 554px; overflow: hidden; height: 100%;}
+#scrollable-city-list .grid3col-wrapper .column{float: left;width: 163px; margin: 0 32px 0 0;}
+#scrollable-city-list .grid3col-wrapper .column.first{}
+#scrollable-city-list .grid3col-wrapper .list-wrap{ }
+#scrollable-city-list .grid3col-wrapper .list-wrap span{padding: 0 0 6px;display: block; }
+#scrollable-city-list .grid3col-wrapper .list-wrap li{border-top: 1px #724998 solid;border-bottom: 1px #57307b solid;  }
+#scrollable-city-list .grid3col-wrapper .list-wrap a{ display: block; text-transform: uppercase; font-size: 12px;color: white;padding: 14px 0 4px;}
+#scrollable-city-list .grid3col-wrapper .list-wrap a:link{text-decoration: none;  }
+#scrollable-city-list .grid3col-wrapper .list-wrap a:visited{}
+#scrollable-city-list .grid3col-wrapper .list-wrap a:hover,
+#scrollable-city-list .grid3col-wrapper .list-wrap a:active{/* background: rgba(89,50,128,0.4); */ background:rgba(255,255,255,0.1);  }
+
+#scrollable-city-list .overview { position: absolute; left: 0; top: 0; padding:16px 0 0; margin: 0; width: 600px; }
+#scrollable-city-list .scrollbar { background:#784f9d\9;*background:#784f9d;filter:alpha(opacity=60);
+background: rgba(120,79,157,0.6); position: relative; float: right; width: 13px;   
+-webkit-border-radius:100% / 4px;
+-moz-border-radius:100% / 4px;
+border-radius:100% / 4px;}
+#scrollable-city-list .track { height: 100%; width:13px; position: relative; padding: 0;cursor: pointer;background:url(/image/front/2013/transBG.gif)\9;  }
+#scrollable-city-list .thumb { background:#9f7fbd\9;*background:#9f7fbd;filter:alpha(opacity=60);
+background: rgba(159,127,189,0.6);
+ -webkit-border-radius:100% / 4px;
+-moz-border-radius:100% / 4px;
+border-radius:100% / 4px; 
+height: 20px; width: 13px; cursor: pointer;  overflow: hidden; position: absolute; top: 0; left:0; }
+#scrollable-city-list .thumb .end {background:url(/image/front/2013/transBG.gif)\9; overflow: hidden\9; height: 5px\9; width: 25px\9; }
+#scrollable-city-list .disable { display: none; }
+
+#scrollable-city-list .overview .title { color: #f8e9b0; font-size: 14px; font-weight: bold; }
+#scrollable-city-list a.item:link { color: #999999; font-size: 11px; text-decoration: none; }
+#scrollable-city-list a.item:visited { color: #999999; font-size: 11px; text-decoration: none; }
+#scrollable-city-list a.item:hover { color: #999999; font-size: 11px; text-decoration: none; }
+#scrollable-city-list a.item:active { color: #999999; font-size: 11px; text-decoration: none; }
+
+/********End Ticket Finder Version**************/
+
+/* *****************ticket finder********************* */
+
+#menu-select-city{}
+#menu-select-city .shadowTop{background:url(/image/front/2013/dropTopBlur.png) no-repeat  50% 0; }
+#menu-select-city a.tixFinder{width: 113px;height: 13px; display: block; background: url(/image/front/2013/tixFinder.png) no-repeat 35px 5px; padding: 5px 25px 19px 35px; }
+#menu-select-city .dropTitleWrap{ width:831px;border-bottom:1px #7f59a3 solid;}
+#menu-select-city .dropTitleA{ font-size: 22px;font-weight: normal; padding: 0 0 13px 3px;border-bottom:1px #5d3882 solid;  }
+
+#menu-select-city-dropdown .left-figure{float:left;width:235px; padding:12px 0 0;}
+#menu-select-city-dropdown .left-figure .laber{display:block;line-height:20px; background:#31153d;margin:0 0 1px;color:#c6a1dd;}
+#menu-select-city-dropdown .left-figure .laber em{padding:0 0 0 7px; }
+#menu-select-city-dropdown .left-figure .imgWrap{ width: 235px; height: 126px; overflow: hidden;display: block; padding: 0 0 15px;}
+#menu-select-city-dropdown .left-figure .imgWrap img{width: 235px;}
+#menu-select-city-dropdown .left-figure .hot-city{}
+#menu-select-city-dropdown .left-figure .hot-city dd{display: block;padding: 0 0 14px;}
+#menu-select-city-dropdown .left-figure .hot-city a{ font:15px Helvetica, Helvetica Neue, Arial, Verdana, sans-serif bold;}
+#menu-select-city-dropdown .left-figure .hot-city a:link,#menu-select-city-dropdown .left-figure .hot-city a:visited{color: #f8e9b0;}
+#menu-select-city-dropdown .left-figure .hot-city a:hover,#menu-select-city-dropdown .left-figure .hot-city a:active{}
+
+.finderFoot{ width:985px;margin:0 -38px 0 -22px; height:38px;background:#5a337f;}
+.finderFoot .wrap{margin:0 38px 0 22px;padding:10px 0 18px;border-top:1px #774e98 solid; color:#c0b6cc; }
+.finderFoot .laber{float:left;font-size:11px; line-height:17px;  font-weight:bold;padding:0 0 0 6px;}
+.finderFoot .wrap a.otherLink{font-size:11px; color:#c0b6cc ;padding:0 7px;display: inline-block;}
+.finderFoot .wrap a.otherLink span{color:#c0b6cc ;}
+.finderFoot .wrap a.otherLink:hover span{color:#c0b6cc;text-decoration: underline;}
+

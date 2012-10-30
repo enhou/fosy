@@ -1,0 +1,436 @@
+/**********************************/
+/*extra css*/
+/**********************************/
+#fosy-login-message-holder {
+    font-size: 12px;
+}
+
+#message-member {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.fosy-landing-content-2col .column.first ul .right-col h3 {
+    height: auto;
+}
+
+
+.fosy-header-container .right-wrapper span.current {
+    color: #B85C04;
+}
+
+.fosy-main-body-content-regist-2col .column.last .right-box {
+    height: 720px;
+}
+
+.fosy-main-body-content-regist-2col .column.first .regist-box {
+    height: 720px;
+}
+
+#fosy-login-info {
+    float: right;
+    top: 95px;  
+    text-align: right;
+    position: relative;
+    right: 10px;
+}
+
+#fosy-your-account-label {
+    float: left;
+}
+
+#fosy-header-welcome-message {
+    float: right;
+    font-size: 12px;
+    text-align: right;
+}
+
+#fosy-your-account-label {
+    /* background: url("/image/arrow.png") no-repeat scroll right center transparent; */
+    float: left;
+    font-size: 15px;
+    margin-top: 5px;
+    /* padding-right: 15px; */
+}
+
+#fosy-your-account-label a {
+    color: #633514;
+}
+
+#fosy-header-welcome-message a {
+    color: #d78b57;
+}
+
+#fosy-profile-tab {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#fosy-profile-tab-content {
+    margin: -15px 0 0 70px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #824001;
+}
+
+#fosy-profile-tab-content .current {
+    color: #B85C04;
+}
+.fosy-main-body-content {
+    margin: -10px auto;
+    min-height: 25px;
+    width: 960px;
+    
+    
+}
+
+.fosy-main-body-content-with-header-img {
+    margin: -35px auto;
+}
+
+.fosy-main-body-article-banner {
+    margin: 0;
+}
+
+
+#fosy-profile-tab-content #benefits {
+    margin-left: 20px;
+}
+
+
+.fosy-main-body-content-benefits .brown-box {
+    margin: 26px 0 90px;
+}
+
+#general-content-content-wrapper {
+    background: #faf5e5;
+}
+
+#general-content-content-wrapper {
+    background: none repeat scroll 0 0 #ffffff;
+    margin: 20px auto;
+    width: 935px;
+    opacity: 0.7;
+}
+
+
+#general-content-content {
+    padding: 50px;
+    width: 835px;    
+    min-height: 350px;
+}
+
+#general-content-content p {
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#general-content-content-title {
+    background: url("/image/fosy-main-body-content-benefits-shadowline.png") no-repeat scroll center bottom transparent;
+    color: #563B32;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.fosy-article-content-2col .section .article .article-body p {
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #4d4d4f;
+}
+
+#confirmation-body {
+    color: #cd6e3b;
+    margin-bottom: 50px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#message-member-benefits {
+    font-size: 14;
+    color: #663300;
+    font-weight: bold;
+ 
+    
+    background: url("/image/fosy-main-body-content-benefits-shadowline.png") no-repeat scroll 50% 100% transparent;
+    font-size: 14px;
+    padding: 44px 0 39px 52px;    
+    
+}
+
+#message-member-benefits #message .message-general {
+    color: #663300;
+    line-height: 20px;
+}
+
+.message-general {
+    color: green;
+}
+
+.message-error {
+    color: red;
+}
+
+.message-member-benefits-return-to-home {
+    margin: 30px 0 0 50px;
+}
+
+#message-member .message-general,
+#message-member .message-error
+{
+    color: #663300;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.fosy-main-body-member-index-wrapper {
+    margin: 0 auto;
+    background: url("/image/fosy-landing-top-banner.jpg") no-repeat scroll 50% 0 transparent;
+    height: 340px;
+}
+
+.fosy-main-body-member-index-wrapper .fosy-main-body-content {
+    height: 290px;
+}
+
+.reset-password-content-body {
+    width: 300px;
+}
+
+.fields label {
+    font-size: 12px;
+    display: block;
+}
+
+.fields field {
+    margin: 5px 0 20px;
+    display: block;
+}
+
+.fields actions {
+    margin-top: 50px;
+    display: block;
+}
+
+.fosy-article-content-2col .section .header {
+    color: lightgray;
+}
+
+.fosy-aside .btn {
+    padding: 15px 0;
+}
+
+field input {
+    border: 1px solid #C0A98A;
+    color: #666666;
+    font-size: 12px;
+    line-height: 9px;
+    padding: 7px 12px;
+    width: 196px;    
+}
+
+#confirmation-button {
+    margin-top: 20px;
+}
+
+#general-content-content-message {
+    background: url("/image/fosy-main-body-content-benefits-shadowline.png") no-repeat scroll center bottom transparent;
+    color: #663300;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+}
+
+.addthis_toolbox.addthis_default_style .txt {
+    width: 200px;
+}
+.fosy-top-navi-body .right-wrapper .navi-box {
+    padding: 2px 0 0;
+}
+
+.content-starting-text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.content-section-title {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content-related-article-link {
+    float: left;
+}
+.content-image-section-left {
+    float: left;
+    margin: 5px 20px 20px 0;
+    width: 200px;
+}
+.content-image-section-right {
+    float: right;
+    margin: 5px 0 20px 20px;
+    width: 200px;    
+}
+.content-image-section-center {
+    margin: 5px 0 20px 0;
+    float: left;
+}
+.content-image-section-left img,
+.content-image-section-right img
+{
+    float: left;
+    width: 200px;
+    
+}
+.content-image-section-center img
+{
+    float: left;
+    width: 530px;
+    
+}
+
+.content-image-section-left .caption, 
+.content-image-section-right .caption,
+.content-image-section-center .caption
+{
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    color: #a0a0a2;
+    width: 100%;
+    line-height: 15px;
+    margin-top: 5px;
+}
+
+.content-related-article-link {
+    background: #cd6434;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 3px;
+    border-width: 0;
+    margin: 20px 20px 0 0;    
+}
+
+a.content-related-article-link {
+    color: #FFFFFF;
+}
+
+.content-related-article-link:hover {
+    background: #99330a;
+    -webkit-transition:background 0.25s ease-out;
+	-moz-transition: background 0.25s ease-out;
+	-o-transition: background 0.25s ease-out;
+	-ms-transition: background 0.25s ease-out;
+	transition: background 0.25s ease-out;
+}
+
+.fosy-article-content-2col .section {
+    padding: 0 36px 120px 45px;
+}
+
+.fosy-landing-content-2col .column.first ul .figure {
+    float: left;
+    height: 240px;
+    overflow: hidden;
+    width: 320px;
+}
+
+.fosy-landing-content-2col .column.first ul img {
+    height: 240px;
+    width: 320px;
+}
+
+.fosy-main-body-content-2col .column.first .welcome-box .wrapper .header h2 {
+    font-size: 22px;
+}
+
+.fosy-main-body-content-regist-2col .column.last .right-box .wrapper .article p {
+    line-height: 16px;
+}
+
+.fosy-footer-body .logo a:hover {
+    color: #996334;
+    text-decoration: underline;
+}
+
+.fosy-top-navi-body .right-wrapper .navi-box a {
+    float: left;
+    padding: 0 0 0 15px;
+}    
+
+.fosy-top-navi-body .right-wrapper .navi-box {
+    padding: 4px 0 0;
+}
+
+.fosy-main-bottom-wrapper .promos .curve-down p {
+    color: #9D9D9D;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+}
+
+.fosy-main-bottom-wrapper .promos .curve-down {
+    height: 220px;
+    min-height: 220px;
+}
+
+.fosy-footer-body {
+    text-transform: none;
+}
+
+.fosy-footer-body .copyright {
+    color: #5f5750;
+    float: left;
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.fosy-footer-menu a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5e2d02;
+}
+
+#general-content-content-body strong {
+    font-weight: bold;
+}
+
+.addthis_button_email .at15t_email {
+    display: none;
+}
+
+.addthis_toolbox.addthis_default_style span {
+    float: left;
+    line-height: 16px;
+}
+
+.addthis-color-grey {
+    color: #cccccc;
+}
+
+.fosy-landing-content-2col .column.last .sidebar {
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+
+.fosy-aside {
+    padding-top: 15px;
+}
+/**********************************/
+/*extra css end*/
+/**********************************/

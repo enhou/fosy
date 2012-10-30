@@ -1,0 +1,534 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Friends of Shen Yun</title>
+<meta name="description" lang="en-us" content="Buy Tickets for entertainment, concerts, shows, performances. Create and promote your events" />
+<meta name="keywords" content="Ticketingbox, Ticketing, Ticketing Box, Ticket, Shen Yun, Shenyun, 
+Shen, Yun, Shenyun Performing Arts, Performing Arts, Performing, Arts" />
+
+<meta name="google-site-verification" content="Ls_xdthXSYrmTGcIoZXWI-OwyfuzSII5kfRdGIJNlrk" />
+
+
+<link rel="stylesheet" href="/css/fosy-layout.css" />
+<link rel="stylesheet" href="/css/extra.css" />
+           
+<script type="text/javascript" src="/js/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/local/fosy-enhancer.js"></script>
+<script type="text/javascript" src="/js/local/popup.js"></script>
+<script type="text/javascript" language="javascript" src="/js/fancybox2/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="/js/fancybox2/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+<script type="text/javascript" src="/js/fancybox2/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.fancybox').fancybox({
+                padding		:	0, 
+                margin		:	0
+            }
+        );
+            
+          
+    });
+
+
+</script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $("[popup]").fancybox({
+            'hideOnContentClick': false
+        });
+
+
+        
+    });
+
+    function searchOnFocus () {
+        if ($('#header-search-box').val()=='Search') {
+            $('#header-search-box').val('');
+        }
+    }
+
+    function searchOnBlur () {
+        if ($('#header-search-box').val()=='') {
+            $('#header-search-box').val('Search');
+        }
+    }
+
+    
+
+
+</script>    </head>
+
+    <body>
+
+        
+<div class="fosy-top-navi">
+    <div class="fosy-top-navi-body"> 
+        <div class="left-wrapper">
+            <ul class="topnav">
+                <li>
+                    <a target="_blank" href="http://www.shenyunperformingarts.org" class="logo text-replace"> Shen Yun Performing Arts </a><span></span>
+                    <ul class="subnav">
+                        <li>
+                            <a target="_blank" href="http://www.shenyunperformingarts.org/">Home</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.shenyunperformingarts.org/tickets/list">Ticket Finder</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.shenyunperformingarts.org/company/about-the-company">About Us</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.shenyunperformingarts.org/learn">Learn</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.shenyunperformingarts.org/videos">Videos</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.shenyunperformingarts.org/news">News</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.shenyunperformingarts.org/support">Support Us</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="right-wrapper">
+            <!--
+            <div class="search-box">
+                <form id="searchForm">
+                    <fieldset>
+                        <div class="input">
+                            <input type="text" name="s" id="s" value="" />
+                        </div>
+                        <input type="submit" id="searchSubmit" value="" />
+                    </fieldset>
+                </form>
+            </div>
+            -->
+            <div class="navi-box"> 
+                <!--
+                <a href="http://shop.shenyun.com">Shop</a> 
+                -->
+                <a href="/" class="current" >Friends of Shen Yun</a> 
+                                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fosy-header clearfix">
+    <div class="fosy-header-container">
+        <a href="/" class="logo"><img src="/image/fosy-header-logo.png" width="291" height="93" /></a>
+        <div id="fosy-login-info">
+        </div>    
+
+    </div>
+</div>
+
+                             
+
+
+        <script>
+function fosyAjaxLogin() {
+    sitePopupAjaxShowProgress('fosy-login-message-holder');
+    sitePopupAjaxFormSubmit('form-login','/user/login-in-popup','fosy-login-message-holder', '/admin');
+}
+
+function fosyJoin() {
+    if ($('#email-join').val()=='') {
+        alert('Please enter your email address.');
+        $('#email-join').focus();
+    }
+    else if ($('#email-join').val()=='Enter your e-mail') {
+        alert('Please enter your email address.');
+        $('#email-join').focus();
+    }
+    else {
+        $.ajax({
+        url: '/user/check-email-existence/email/'+$('#email-join').val(),
+            success: function( data ) {
+                var jsonResult=eval("(" + data + ")");
+                if (jsonResult.status==1){
+                    $('#form-fosy-join').submit();
+                }
+                else {
+                    alert('This email is in our system. Please choose another email address.');
+                    $('#email-join').focus();
+                }
+            }
+        });        
+    }    
+
+}
+
+function fosyJoinPopup() {
+    if ($('#popup-box-input-email').val()=='') {
+        alert('Please enter your email address.');
+        $('#popup-box-input-email').focus();
+    }
+    else if ($('#popup-box-input-email').val()=='Enter your e-mail') {
+        alert('Please enter your email address.');
+        $('#popup-box-input-email').focus();
+    }
+    else {
+        $.ajax({
+        url: '/user/check-email-existence/email/'+$('#popup-box-input-email').val(),
+            success: function( data ) {
+                var jsonResult=eval("(" + data + ")");
+                if (jsonResult.status==1){
+                    $('#form-fosy-join-popup').submit();
+                }
+                else {
+                    alert('This email is in our system. Please choose another email address.');
+                    $('#popup-box-input-email').focus();
+                }
+            }
+        });        
+    }
+
+}
+
+$(document).ready(function() {
+    $("#login-box-password").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#form-login-button").click();
+    }
+    });
+});
+
+</script>
+
+<div class="fosy-main-body clearfix">
+    <div class="fosy-main-body-top-shadow"></div>
+    <div class="fosy-main-body-content">
+        <div class="fosy-main-body-content-2col">
+            <div class="column first">
+                <div class="welcome-box">
+                    <div class="welcome-box-bg"></div>
+                    <div class="wrapper">
+                        <div class="header clearfix">
+                            <h4>Welcome!</h4>
+                            <h2>Become a member for exclusive opportunities. It's free!</h2>
+                        </div>
+                        <div class="welcome-box-2col">
+                            <div class="sub-column first">
+                                <ul class="welcome-info">
+                                    <li>Get First Access<span>to special offers, pre-sales, and events.</span></li>
+                                    <li>Exclusive Content<span>features, videos, and newsletter</span></li>
+                                    <li>Shop Discounts<span>at Shen Yun Gifts, personalized offers, and more FREE!</span></li>
+                                </ul>
+                            </div>
+                            
+                            <form name="form-fosy-join" id="form-fosy-join" method="post" action="/member/join">
+                            <div class="sub-column last">
+                                <div class="fields">
+                                    <dl class="form">
+                                        <dt>
+                                        <label name="">Join the Shen Yun community!</label>
+                                        </dt>
+                                        <dd>
+                                            <input name="email" type="text" value="Enter your e-mail" class="white-box" id="email-join" onFocus="inputOnFocus()" onBlur="inputOnBlur()">
+                                            <script type="text/javascript">
+                                                function inputOnFocus () {
+                                                    if ($('#email-join').val()=='Enter your e-mail') {
+                                                        $('#email-join').val('');
+                                                    }
+                                                }
+
+                                                function inputOnBlur () {
+                                                    if ($('#email-join').val()=='') {
+                                                        $('#email-join').val('Enter your e-mail');
+                                                    }
+                                                }
+                                            </script> 
+                                        </dd>
+                                    </dl>
+                                    <div class="form-actions clearfix">
+                                        <button  type="button" onclick="fosyJoin()" class="classy primary">Join now</button>
+                                    </div>
+                                    
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column last">
+                <div class="login-box fields">
+                    <div class="member-label">Already a member?</div>
+                    <form id="form-login" method="post" action="">
+                        <input name="email" type="text" value="Enter your e-mail" maxlength="128" class="white-box" id="login-box-input-email" onFocus="inputOnFocusLogin()" onBlur="inputOnBlurLogin()">
+                        <script type="text/javascript">
+                            function inputOnFocusLogin () {
+                                if ($('#login-box-input-email').val()=='Enter your e-mail') {
+                                    $('#login-box-input-email').val('');
+                                }
+                            }
+
+                            function inputOnBlurLogin () {
+                                if ($('#login-box-input-email').val()=='') {
+                                    $('#login-box-input-email').val('Enter your e-mail');
+                                }
+                            }
+                        </script>
+                        <input name="password" type="password" value="Password" class="white-box" id="login-box-password" onFocus="inputOnFocusPassword()" onBlur="inputOnBlurPassword()" >
+                        <script type="text/javascript">
+                            function inputOnFocusPassword () {
+                                if ($('#login-box-password').val()=='Password') {
+                                    $('#login-box-password').val('');
+                                }
+                            }
+
+                            function inputOnBlurPassword () {
+                                if ($('#login-box-password').val()=='') {
+                                    $('#login-box-password').val('Password');
+                                }
+                            }
+                        </script>
+                        
+                        <div id="fosy-login-message-holder"></div>
+                        <div class="form-actions clearfix">
+                            <button id="form-login-button" type="button" class="classy primary" onclick="fosyAjaxLogin()">sign in</button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <a class="more" href="/user/forgot-password-request">Forgot your password?</a> 
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fosy-main-body-bottom-shadow"></div>
+</div>
+<div class="fosy-main-bottom clearfix">
+    <div class="fosy-main-bottom-wrapper">
+        <div class="promos">
+            <ul>
+                <!--
+                <li class="first-child">
+                    <div class="curve-down"><a class="fancybox" href="#inline1" >
+                            <div class="figure">
+                                <div class="header uppercase">Exclusive Video</div>
+                                <div class="img-wrap"><img src="/image/fosy-main-bottom-video-post.jpg"/><span class="play"></span></div>
+                            </div>
+                        </a></div>
+                </li>
+                <li>
+                    <div class="curve-down"><a class="fancybox" href="#inline1" >
+                            <div class="figure">
+                                <div class="header uppercase">RECENT NEWS</div>
+                                <div class="img-wrap"><img src="/image/fosy-main-bottom-news.jpg"  /></div>
+                            </div>
+                            <h5>Featured Article Title Monkey King: Title Continues Here <span>JULY 20, 2012</span></h5>
+                            <p>A bit of description indicating how awesome this article is that continues here but not too long maybe stopping.. </p>
+                        </a></div>
+                </li>
+                <li>
+                    <div class="curve-down"><a class="fancybox" href="#inline1" >
+                            <div class="figure">
+                                <div class="header uppercase">SPECIAL EVENTS</div>
+                                <div class="img-wrap"><img src="/image/fosy-main-bottom-events.jpg" /></div>
+                            </div>
+                            <h5>Look for exclusive pre-sales, offers, and special events in your area!</h5>
+                        </a></div>
+                </li>
+                -->
+                                    <li class="first-child">
+                        <div class="curve-down"><a class="fancybox" href="#inline1" >
+                                <div class="figure">
+                                    <div class="header bold">Tang Monk</div>
+                                    <div class="img-wrap"><img src="http://www.friendsofshenyun.org/data/media/image/original/2012/09/07/37693cfc748049e45d87b8c7d8b9aacd.jpg"/></div>
+                                </div>
+                            <p>Question: What do Tripitaka, Xuan Zang, and Tang Seng all have in common?</p>
+                        </a></div>
+                    </li>                
+                                    <li class="">
+                        <div class="curve-down"><a class="fancybox" href="#inline1" >
+                                <div class="figure">
+                                    <div class="header bold">Monkey King Captures Pigsy</div>
+                                    <div class="img-wrap"><img src="http://www.friendsofshenyun.org/data/media/image/original/2012/09/07/1ff1de774005f8da13f42943881c655f.jpg"/></div>
+                                </div>
+                            <p>Pigsy&rsquo;s is a story of a man-pig embarking on a sacred journey. But it didn&rsquo;t start out like that.</p>
+                        </a></div>
+                    </li>                
+                                    <li class="">
+                        <div class="curve-down"><a class="fancybox" href="#inline1" >
+                                <div class="figure">
+                                    <div class="header bold">The White Bone Demon</div>
+                                    <div class="img-wrap"><img src="http://www.friendsofshenyun.org/data/media/image/original/2012/09/07/b6d767d2f8ed5d21a44b0e5886680cb9.jpg"/></div>
+                                </div>
+                            <p>The story of the White Bone Demon is a classic within a classic.</p>
+                        </a></div>
+                    </li>                
+                            </ul>
+            <div id="inline1" style="width:720px; height:420px;  display: none;">
+                <div class="fosy-index-popup-wrap">
+                    <div class="header"><a class="logo" href=""></a></div>
+                    <div class="wrapper">
+                        <div class="popup-welcome-box-2col">
+                            <div class="popup-column first">
+                                <h4 class="uppercase">Welcome!</h4>
+                                <ul class="welcome-info">
+                                    <li>We’ll Alert You First <span>For advance notice of special events, offers and pre-sales</span></li>
+                                    <li>Exclusive Content <span>Free access to unique content (videos, music, wallpapers)</span></li>
+                                    <li>Personalized Offers <span>Based on your location</span></li>
+                                </ul>
+                            </div>
+                            <form name="form-fosy-join-popup" id="form-fosy-join-popup" method="post" action="/member/join">
+                            <div class="popup-column last">
+                                <div class="fields">
+                                    <dl class="form">
+                                        <dt>
+                                        <label name="">Not a member?</label>
+                                        </dt>
+                                        <dd>
+                                            <input name="email" type="text" value="Enter your e-mail" class="white-box" id="popup-box-input-email" onFocus="inputOnFocusPopup()" onBlur="inputOnBlurPopup()">
+                                            <script type="text/javascript">
+                                                function inputOnFocusPopup () {
+                                                    if ($('#popup-box-input-email').val()=='Enter your e-mail') {
+                                                        $('#popup-box-input-email').val('');
+                                                    }
+                                                }
+
+                                                function inputOnBlurPopup () {
+                                                    if ($('#popup-box-input-email').val()=='') {
+                                                        $('#popup-box-input-email').val('Enter your e-mail');
+                                                    }
+                                                }
+                                            </script> 
+                                        </dd>
+                                    </dl>
+                                    <div class="form-actions clearfix">
+                                        <button type="button" onclick="fosyJoinPopup()"  class="classy primary">Join now</button>
+                                    </div>
+                                    <a class="already" href="">Already a member? <span>Sign in</span></a> </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="vspace20"></div>
+        <div class="vspace20"></div>
+        <div class="fosy-footer">
+    <div class="fosy-footer-body">
+        <div class="copyright">
+            &copy; 2012 FriendsofShenYun.org&nbsp;&nbsp;All Rights Reserved.        </div>
+        <div class="fosy-footer-menu"> 
+            <a target="_blank" href="http://www.shenyunperformingarts.org">Shen Yun Performing Arts Official Website</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;<a href="/contact-us">Contact Us</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;<a href="/terms-and-conditions">Terms</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;<a class="fancybox" href="#inline2">Share</a>
+            <!--
+            <a href="/content/faq">faq</a>&nbsp;&middot;&nbsp;
+            <a href="/privacy-policy">PRIVACY POLICY</a>&nbsp;&middot;&nbsp;
+            -->
+            
+        </div>
+            <div class="social-media"> 
+            <a target="_blank" href="http://twitter.com/shenyun" class="twitter"></a> 
+            <a target="_blank" href="http://www.facebook.com/pages/Shen-Yun/167686259995685" class="facebook"></a> 
+            <a target="_blank" href="https://plus.google.com/118181387677125705274/posts" class="google"></a> 
+            <a target="_blank" href="http://www.youtube.com/ShenYunTV" class="youtube"></a> 
+
+</div>    </div>
+</div> 
+
+<div id="inline2" style="width:720px; height:425px; display: none;">
+                <div class="fosy-index-popup-wrap">
+                    <div class="header"><a class="logo" href=""></a>
+                    <h3>Share this with a Friend!</h3>
+                    </div>
+                    <div class="wrapper">
+                        <div class="popup-share-box-2col">
+                            <div class="popup-column first">
+                               
+                                <div class="fields">
+                                    <dl class="form">
+                                        <dt>
+                                        <label name="">Friends’ email addresses (separate by commas)</label>
+                                        </dt>
+                                        <dd>
+                                            <input name="email" type="text" value="Enter your e-mail" class="white-box large2" id="popup-box-input-email2" onFocus="inputEmailOnFocusPopup()" onBlur="inputEmailOnBlurPopup()">
+                                            <script type="text/javascript">
+                                                function inputEmailOnFocusPopup () {
+                                                    if ($('#popup-box-input-email2').val()=='Enter your e-mail') {
+                                                        $('#popup-box-input-email2').val('');
+                                                    }
+                                                }
+
+                                                function inputEmailOnBlurPopup () {
+                                                    if ($('#popup-box-input-email2').val()=='') {
+                                                        $('#popup-box-input-email2').val('Enter your e-mail');
+                                                    }
+                                                }
+                                            </script> 
+                                        </dd>
+                                    </dl>
+                                    
+                                    <dl class="form">
+
+									<dd>
+										<form name="" class="right">
+											<input name="" type="checkbox" value="" class="white-check" >
+											<span class="font12px">Send me a copy</span>
+										</form>
+									</dd>
+
+									
+
+								</dl>
+								
+                                     </div>
+                                
+                            </div>
+                            <form name="form-fosy-join-popup" id="form-fosy-join-popup" method="post" action="/member/join">
+                            <div class="popup-column last">
+                                <div class="fields">
+                                    <dl class="form">
+                                        <dt>
+                                        <label name="">Add a personal message:</label>
+                                        </dt>
+                                        <dd>
+                                            <textarea rows="10" cols="10" class="white-box large300"></textarea>
+                                            <script type="text/javascript">
+                                                function inputOnFocusPopup () {
+                                                    if ($('#popup-box-input-email').val()=='Enter your e-mail') {
+                                                        $('#popup-box-input-email').val('');
+                                                    }
+                                                }
+
+                                                function inputOnBlurPopup () {
+                                                    if ($('#popup-box-input-email').val()=='') {
+                                                        $('#popup-box-input-email').val('Enter your e-mail');
+                                                    }
+                                                }
+                                            </script> 
+                                        </dd>
+                                    </dl>
+                                    <div class="form-actions paddingtop25 clearfix">
+                                        <button type="button" onclick=""  class="classy primary">SEND</button>
+                                    </div>
+                                     </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p> </p>
+                </div>
+            </div>      
+
+    </body>
+</html>
