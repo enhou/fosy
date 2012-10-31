@@ -20,6 +20,7 @@ Shen, Yun, Shenyun Performing Arts, Performing Arts, Performing, Arts" />
 <script type="text/javascript" language="javascript" src="/js/fancybox2/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 <link rel="stylesheet" href="/js/fancybox2/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
 <script type="text/javascript" src="/js/fancybox2/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script type="text/javascript" language="javascript" src="/js/jquery/jquery.cycle.all.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('.fancybox').fancybox({
@@ -55,11 +56,23 @@ Shen, Yun, Shenyun Performing Arts, Performing Arts, Performing, Arts" />
             $('#header-search-box').val('Search');
         }
     }
-
     
+</script> 
+
+<script type="text/javascript">
+$(function() {
+    $('#slideshow').cycle({
+        fx:     'fade',
+        timeout: 5000,
+        pager:  '.navi-dot',
+		slideExpr: '.slide-content'
+    });
+});
+</script>
 
 
-</script>    </head>
+
+   </head>
 
     <body>
 
@@ -153,11 +166,62 @@ Shen, Yun, Shenyun Performing Arts, Performing Arts, Performing, Arts" />
         <div class="fosy-main-body-top-shadow"></div>
         <div class="fosy-main-body-content">
             <div class="fosy-main-body-landing-slide">
-
+	            <div class="slide-wrapper" id="slideshow">
+	            <div class="slide-content">
+	            	<div class="figure left"><img src="/image/fosy-landing-top-banner1.png" alt="fosy-landing-top-banner1" /></div>
+		            <div class="feature-list left">
+		            	<div class="feature-list-wrap">
+			            	<div class="feature-label uppercase orange">FEATURING</div>
+			            	<ul class="brown-t georgia">
+				            	<li class="current"><a href="">The Good, the Bad, and the Goofy—China’s Eccentric Monks</a></li>
+				            	<li><a href="">Journey to the West</a></li>
+				            	<li><a href="">In Search of Artistic Inspiration</a></li>
+				            	<li><a href="">Magical Weapon Rankings</a></li>
+			            	</ul>
+		            	</div>
+			            
+		            </div>
+		        </div>
+	            
+	            <div class="slide-content">
+	            	<div class="figure left"><img src="/image/fosy-landing-top-banner1.png" alt="fosy-landing-top-banner1" /></div>
+		            <div class="feature-list left">
+		            	<div class="feature-list-wrap">
+			            	<div class="feature-label uppercase orange">FEATURING</div>
+			            	<ul class="brown-t georgia">
+				            	<li class="current"><a href="">The Good, the Bad, and the Goofy—China’s Eccentric Monks</a></li>
+				            	<li><a href="">Journey to the West</a></li>
+				            	<li><a href="">In Search of Artistic Inspiration</a></li>
+				            	<li><a href="">Magical Weapon Rankings</a></li>
+			            	</ul>
+		            	</div>
+			            
+		            </div>
+		        </div>
+		        
+		        <div class="slide-content">
+	            	<div class="figure left"><img src="/image/fosy-landing-top-banner1.png" alt="fosy-landing-top-banner1" /></div>
+		            <div class="feature-list left">
+		            	<div class="feature-list-wrap">
+			            	<div class="feature-label uppercase orange">FEATURING</div>
+			            	<ul class="brown-t georgia">
+				            	<li class="current"><a href="">The Good, the Bad, and the Goofy—China’s Eccentric Monks</a></li>
+				            	<li><a href="">Journey to the West</a></li>
+				            	<li><a href="">In Search of Artistic Inspiration</a></li>
+				            	<li><a href="">Magical Weapon Rankings</a></li>
+			            	</ul>
+		            	</div>
+			            
+		            </div>
+		        </div>
+		        <div class="navi-dot"></div>
+	            </div>
             </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="fosy-main-body-bottom-shadow"></div>
+        
+        <div class="fosy-main-body-bottom-shadow">
+	        
+        </div>
     </div>
 </div>
 
