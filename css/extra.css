@@ -191,11 +191,11 @@
 .fosy-main-body-member-index-wrapper {
     margin: 0 auto;
     background: url("/image/fosy-landing-top-banner.jpg") no-repeat scroll 50% 0 transparent;
-    height: 340px;
+    /* height: 340px; */
 }
 
 .fosy-main-body-member-index-wrapper .fosy-main-body-content {
-    height: 290px;
+    min-height: 290px;
 }
 
 .reset-password-content-body {

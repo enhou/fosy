@@ -1222,6 +1222,13 @@ input#searchSubmit {
 	background: url(/image/fosy-landing-top-pattern.jpg) repeat-x 50% 0;
 	position: relative;
 }
+.fosy-main-body-landing-slide {
+	width: 960px;
+	margin: -35px auto ;
+	height: 320px;
+	position: relative;
+	background: black;
+}
 .fosy-main-body-landing-banner .figure {
 	margin: 0 auto;
 	text-align: center;
