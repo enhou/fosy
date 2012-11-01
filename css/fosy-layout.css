@@ -311,6 +311,117 @@ sup {
 	-moz-box-shadow: rgba(0,0,0,.30) 0 4px 5px;
 	box-shadow: rgba(0,0,0,.30) 0 4px 5px;
 }
+/****************** space **********************/
+.vspace5 {
+    float:left;
+    clear:both;
+    height:5px;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.vspace10 {
+    float:left;
+    clear:both;
+    height:10px;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+
+.vspace20 {
+    float:left;
+    clear:both;
+    height:20px;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.hspace5-float-none {
+    display: inline;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 5px;
+}
+
+.hspace10-float-none {
+    display: inline;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+}
+
+.hspace20-float-none {
+    display: inline;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+
+.hspace5-float-left {
+    display: block;
+    float: left;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 5px;
+}
+
+.hspace10-float-left {
+    display: block;
+    float: left;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+}
+
+.hspace20-float-left {
+    display: block;
+    float: left;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+
+.hspace5-float-right {
+    display: block;
+    float: right;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 5px;
+}
+
+.hspace10-float-right {
+    display: block;
+    float: right;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+}
+
+.hspace20-float-right {
+    display: block;
+    float: right;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+
+
 /****************** form **********************/
 .fields .white-box {
 	border: 1px #c0a98a solid;
@@ -1238,7 +1349,8 @@ input#searchSubmit {
 }
 .fosy-main-body-landing-slide .slide-wrapper{
 	width: 960px;
-	position: relative;	
+	position: relative;
+	height: 320px;		
 }
 .fosy-main-body-landing-slide .slide-wrapper .slide-content{
 	width: 960px;
@@ -1621,9 +1733,13 @@ background-color: #673a34;
 	text-align: center;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 .fosy-aside a:hover.btn {
 	color: #ffffd7;
+	background: #99330A;
 }
 
 /****************** wallpaper-content **********************/
